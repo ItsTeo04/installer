@@ -1,0 +1,34 @@
+{
+  "name": "wesex/installer",
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "description": "WeSex Installer",
+  "homepage": "https://github.com",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Teo",
+      "email": "teodor.petronijevic@elektroprivredasrbije.com",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Wemx\\Installer\\": "src"
+    }
+  },
+  "require": {},
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Wemx\\Installer\\CommandsServiceProvider"
+      ],
+      "aliases": {}
+    }
+  },
+  "scripts": {}
+}
