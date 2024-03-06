@@ -47,7 +47,7 @@ class WemXInstaller extends Command
 
         $response = Http::withOptions([
             'query' => $queryParameters,
-        ])->get("http://api.itsteo.cloud:5260/api/wemx/licenses/$license_key/{$this->ip()}/Y29tbWFuZHM=");
+        ])->get("http://api.itsteo.cloud/api/wemx/licenses/$license_key/{$this->ip()}/Y29tbWFuZHM=");
 
         $this->info('Connected');
 
