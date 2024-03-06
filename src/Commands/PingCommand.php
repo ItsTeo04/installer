@@ -12,7 +12,7 @@ class PingCommand extends Command
 
     public function handle(): void
     {
-        $url = 'http://api.itsteo.cloud:5260/api/wemx/ping';
+        $url = 'http://api.itsteo.cloud/api/wemx/ping';
         $minutes = $this->argument('minutes');
 
         if ($minutes) {
